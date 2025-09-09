@@ -16,36 +16,36 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Multi-Cloud Infrastructure Automation",
+      title: "Amplify Portfolio website",
       description:
-        "Terraform-based infrastructure as code solution supporting AWS, Azure, and GCP with automated CI/CD pipelines.",
-      technologies: ["Terraform", "AWS", "Azure", "Jenkins", "Docker"],
-      categories: ["AWS", "Azure", "Google Cloud", "Terraform", "Jenkins"],
-      link: "https://github.com/yourusername/multi-cloud-infra",
+        "Next.js portfolio website deployed with AWS Amplify, with automatic deployments from GitHub using CICD best practices.",
+      technologies: ["Next.js", "AWS", "AWS Amplify", "AWS CDK"],
+      categories: ["AWS", "AWS Amplify", "Next.js", "AWS CDK"],
+      link: "https://github.com/Nilaj0914/Amplify-Portfolio-website",
     },
     {
-      title: "Kubernetes Monitoring Stack",
+      title: "TechHealth AWS Migration",
       description:
-        "Complete observability solution using Prometheus, Grafana, and ELK stack for containerized applications.",
-      technologies: ["Kubernetes", "Prometheus", "Grafana", "ELK", "Helm"],
-      categories: ["Kubernetes", "Prometheus"],
-      link: "https://github.com/yourusername/k8s-monitoring",
+        "A case study project involving the migration of a healthcare application built using AWS console to Infrastructure as Code using AWS CDK.",
+      technologies: ["AWS", "AWS CDK", "EC2", "RDS", "Security"],
+      categories: ["AWS", "AWS CDK", "EC2", "RDS", "Security"],
+      link: "https://github.com/Nilaj0914/TechHealth-AWS-Migration",
     },
     {
-      title: "Serverless Data Pipeline",
+      title: "StartupCo IAM Security Audit",
       description:
-        "Event-driven data processing pipeline using AWS Lambda, SQS, and DynamoDB with real-time analytics.",
-      technologies: ["AWS Lambda", "SQS", "DynamoDB", "Python", "CloudWatch"],
-      categories: ["AWS"],
-      link: "https://github.com/yourusername/serverless-pipeline",
+        "A case study project invoving a comprehensive security audit of a Startup's AWS IAM permission policies and roles to identify and remediate potential vulnerabilities.",
+      technologies: ["AWS", "AWS Cloudformation", "Security"],
+      categories: ["AWS", "AWS Cloudformation", "Security"],
+      link: "https://github.com/Nilaj0914/StartupCO-IAM-Security-Audit",
     },
     {
-      title: "Cloud Security Automation",
+      title: "Pull Request CI/CD Pipeline",
       description:
-        "Automated security compliance checking and remediation across cloud environments using custom policies.",
-      technologies: ["AWS Config", "CloudFormation", "Python", "IAM", "CloudTrail"],
-      categories: ["AWS", "Security"],
-      link: "https://github.com/yourusername/cloud-security",
+        "A GitHub Actions CI/CD pipeline that automates testing and deployment of infrastructure changes to AWS using AWS CloudFormation.",
+      technologies: ["AWS", "AWS CloudFormation", "GitHub Actions"],
+      categories: ["AWS", "AWS CloudFormation", "GitHub Actions"],
+      link: "https://github.com/Nilaj0914/Pull-Request-CICD-Pipeline",
     },
   ]
 
@@ -82,14 +82,14 @@ export default function Portfolio() {
 
   const skills = [
     { name: "AWS", icon: Cloud },
-    { name: "Azure", icon: Cloud },
-    { name: "Google Cloud", icon: Cloud },
-    { name: "Kubernetes", icon: Server },
-    { name: "Docker", icon: Server },
+    { name: "AWS CDK", icon: Cloud },
+    { name: "AWS Cloudformation", icon: Cloud },
+    { name: "GitHub Actions", icon: Cloud },
+    { name: "AWS Amplify", icon: Server },
+    { name: "AWS Lambda", icon: Server },
     { name: "Terraform", icon: Database },
-    { name: "Ansible", icon: Server },
-    { name: "Jenkins", icon: Server },
-    { name: "Prometheus", icon: Database },
+    { name: "EC2", icon: Server },
+    { name: "RDS", icon: Database },
     { name: "Security", icon: Shield },
   ]
 
@@ -115,7 +115,7 @@ export default function Portfolio() {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="relative">
               <Image
-                src="/professional-headshot-of-cloud-engineer.jpg"
+                src="/nilaj.png"
                 alt="Professional headshot"
                 width={200}
                 height={200}
@@ -124,11 +124,12 @@ export default function Portfolio() {
             </div>
             <div className="text-center md:text-left">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
-                Cloud Engineering Professional
+                Hi, I'm Nilaj Majumder
               </h1>
               <p className="text-xl text-muted-foreground mb-6 text-pretty max-w-2xl">
-                Passionate about building scalable, secure, and efficient cloud infrastructure. Specializing in
-                multi-cloud architectures, DevOps automation, and modern containerization.
+                A certified AWS Cloud Engineer, I am capable of implementing cloud solutions that are highly available, durable
+and fault tolerant leveraging a variety of AWS Services while following industry best practices. I can tackle technical challenges efficiently using solid foundation in cloud native technologies and architectural patterns. I excel in
+communication, problem-solving and collaboration.
               </p>
               <div
                 id="contact-buttons"
@@ -137,19 +138,19 @@ export default function Portfolio() {
                 }`}
               >
                 <Button asChild className="bg-primary hover:bg-primary/90">
-                  <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/nilaj-majumder-a18061293/" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="w-4 h-4 mr-2" />
                     LinkedIn
                   </a>
                 </Button>
                 <Button variant="outline" asChild>
-                  <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/Nilaj0914" target="_blank" rel="noopener noreferrer">
                     <Github className="w-4 h-4 mr-2" />
                     GitHub
                   </a>
                 </Button>
                 <Button variant="outline" asChild>
-                  <a href="mailto:your.email@example.com">
+                  <a href="mailto:nilaj.majumder0814@gmail.com">
                     <Mail className="w-4 h-4 mr-2" />
                     Contact
                   </a>

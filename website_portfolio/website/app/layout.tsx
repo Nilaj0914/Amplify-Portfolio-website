@@ -9,7 +9,7 @@ import { ContactProvider } from "@/contexts/contact-context"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "v0 App",
+  title: "NM portfolio",
   description: "Created with v0",
   generator: "v0.app",
 }
@@ -24,7 +24,7 @@ export default function RootLayout({
       <body suppressHydrationWarning= {true} className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <ContactProvider>
           <Suspense fallback={<div>Loading...</div>}>
-            <Navigation />
+            { <Navigation /> }
             {children}
           </Suspense>
         </ContactProvider>
