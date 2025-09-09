@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail, ExternalLink, Cloud, Server, Database, Shield, Calendar, User } from "lucide-react"
 import Image from "next/image"
 import { useContact } from "@/contexts/contact-context"
+import { link } from "fs"
 
 export default function Portfolio() {
   const [selectedFilter, setSelectedFilter] = useState<string>("All")
@@ -32,7 +33,7 @@ export default function Portfolio() {
       link: "https://github.com/Nilaj0914/TechHealth-AWS-Migration",
     },
     {
-      title: "StartupCo IAM Security Audit",
+      title: "StartupCo AWS Security Audit",
       description:
         "A case study project invoving a comprehensive security audit of a Startup's AWS IAM permission policies and roles to identify and remediate potential vulnerabilities.",
       technologies: ["AWS", "AWS Cloudformation", "Security"],
@@ -50,33 +51,37 @@ export default function Portfolio() {
   ]
 
   const blogPosts = [
-    {
+    /*{
       title: "Building Resilient Multi-Cloud Architectures",
       description: "Best practices for designing fault-tolerant systems across AWS, Azure, and GCP.",
       date: "2024-01-15",
       categories: ["AWS", "Azure", "Google Cloud"],
       readTime: "8 min read",
+      link: "https://medium.com/@nilaj.majumder0814/got-my-first-cloud-certification-3939faad9a10"
+    },*/
+    {
+      title: "Documenting TechHealth's AWS Migration",
+      description: "Deep dive into how we migrated a healthcare web app built using AWS console to AWS CDK.",
+      date: "August 31,2025",
+      categories: ["AWS", "AWS CDK", "EC2", "RDS", "Security"],
+      readTime: "5 min read",
+      link: "https://medium.com/@nilaj.majumder0814/techhealth-migration-modernizing-a-healthcare-web-app-on-aws-with-the-cdk-15ef12c907d2"
     },
     {
-      title: "Kubernetes Security: A Comprehensive Guide",
-      description: "Deep dive into securing containerized workloads and cluster configurations.",
-      date: "2024-01-08",
-      categories: ["Kubernetes", "Security"],
-      readTime: "12 min read",
+      title: "Documenting StartupCo's AWS security audit",
+      description: "Learn how we identified and remediated critical IAM security issues in a startup's AWS environment.",
+      date: "August 27,2025",
+      categories: ["AWS", "AWS Cloudformation", "Security"],
+      readTime: "5 min read",
+      link: "https://medium.com/@nilaj.majumder0814/from-chaos-to-control-fixing-a-startups-aws-security-debt-5fd0dceb67a6"
     },
     {
-      title: "Infrastructure as Code with Terraform",
-      description: "Advanced Terraform patterns for managing complex cloud infrastructure.",
-      date: "2024-01-01",
-      categories: ["Terraform", "AWS", "Azure"],
-      readTime: "10 min read",
-    },
-    {
-      title: "Monitoring Microservices with Prometheus",
-      description: "Setting up comprehensive observability for distributed systems.",
-      date: "2023-12-20",
-      categories: ["Prometheus", "Kubernetes"],
-      readTime: "6 min read",
+      title: "AWS Certified Cloud Practitioner: My first cloud certification",
+      description: "Announcing the completion of my first cloud certification.",
+      date: "August 18,2025",
+      categories: ["AWS", "AWS Certification"],
+      readTime: "1 min read",
+      link: "https://medium.com/@nilaj.majumder0814/got-my-first-cloud-certification-3939faad9a10"
     },
   ]
 
@@ -265,9 +270,14 @@ communication, problem-solving and collaboration.
                   <div className="flex items-start justify-between">
                     <CardTitle className="text-xl text-card-foreground">{blog.title}</CardTitle>
                     <Button variant="ghost" size="sm" asChild>
+                      {/* This is temporary until I write my own blogs, this will link to my Medium blog posts
                       <a href={`/blog/${blog.title.toLowerCase().replace(/\s+/g, "-")}`}>
                         <ExternalLink className="w-4 h-4" />
+                      </a>*/}
+                      <a href={blog.link} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4" />
                       </a>
+                      {/*Delete lines 277-279 when writing your own blogs and uncomment lines 273-276*/}
                     </Button>
                   </div>
                   <CardDescription className="text-muted-foreground">{blog.description}</CardDescription>
@@ -308,7 +318,7 @@ communication, problem-solving and collaboration.
       <footer className="border-t border-border py-8 bg-background">
         <div className="container mx-auto px-6 text-center">
           <p className="text-muted-foreground">
-            © 2024 Cloud Engineering Portfolio. Built with Next.js and deployed on Vercel.
+            Nilaj Majumder Cloud Engineering Portfolio. Built with Next.js.
           </p>
         </div>
       </footer>
