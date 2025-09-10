@@ -92,7 +92,7 @@ export default function Portfolio() {
     { name: "GitHub Actions", icon: Cloud },
     { name: "AWS Amplify", icon: Server },
     { name: "AWS Lambda", icon: Server },
-    { name: "Terraform", icon: Database },
+    //{ name: "Terraform", icon: Database },
     { name: "EC2", icon: Server },
     { name: "RDS", icon: Database },
     { name: "Security", icon: Shield },
