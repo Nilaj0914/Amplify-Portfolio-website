@@ -24,7 +24,7 @@ export default function RootLayout({
       <body suppressHydrationWarning= {true} className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <ContactProvider>
           <Suspense fallback={<div>Loading...</div>}>
-            {/* <Navigation /> */}
+            {/*<Navigation />*/}
             {children}
           </Suspense>
         </ContactProvider>
