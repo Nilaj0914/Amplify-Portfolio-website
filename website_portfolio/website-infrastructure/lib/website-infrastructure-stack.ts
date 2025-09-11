@@ -27,7 +27,7 @@ export class WebsiteInfrastructureStack extends cdk.Stack {
             preBuild: {
               commands: [
                 'echo "starting this build"',
-                'cd website',
+                'cd Amplify-Portfolio-website/website_portfolio/website',
                 'npm install'
               ],
             },
@@ -35,8 +35,8 @@ export class WebsiteInfrastructureStack extends cdk.Stack {
             // Building the Next.js app and exporting it as static files in the out directory
             build: {
               commands: [
-                'echo "nuilding our next.js app"',
-                'npm run buils-and-export',
+                'echo "building our next.js app"',
+                'npm run build-and-export',
                 'echo "build completed"',
               ],
             },
@@ -44,15 +44,15 @@ export class WebsiteInfrastructureStack extends cdk.Stack {
 
           // Telling amplify where the build output files are located that are to be hosted
           artifacts:{
-            baseDirectory: 'website/out',
+            baseDirectory: 'Amplify-Portfolio-website/website_portfolio/website/out',
             files: ['**/*'],
           },
 
           // Caching node_modules and .next/cache to speed up build times in the future
           cache:{
             paths:[
-              'node_modules/**/*',
-              '.next/cache/**/*',
+              'Amplify-Portfolio-website/website_portfolio/website/node_modules/**/*',
+              'Amplify-Portfolio-website/website_portfolio/website/.next/cache/**/*',
             ]
           }
         }
