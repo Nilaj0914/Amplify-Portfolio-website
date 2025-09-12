@@ -14,11 +14,12 @@ The key functionalities are:
 
 * **CI/CD Automation:** Automatically builds and deploys the website whenever changes are pushed to the `main` branch on GitHub.
 
-## How it does it: Architecture and Design Decisions
+## How does it work: Architecture and Design Decisions
+![architecture diagram](website_portfolio/images/image.png)
 
 The project is split into two main parts: the frontend Next.js application and the backend infrastructure defined with AWS CDK.
 
-### Frontend (`website_portfolio/website`)
+### Frontend ([website](website_portfolio/website))
 
 * **Framework:** The website is built using **Next.js**, a popular React framework that enables features like static site generation (SSG).
 
@@ -28,7 +29,7 @@ The project is split into two main parts: the frontend Next.js application and t
 
 * **Styling:** **Tailwind CSS** is used for styling, allowing for rapid development of a responsive and custom user interface directly within the JSX.
 
-### Backend & Deployment (`website_portfolio/website-infrastructure`)
+### Backend & Deployment ([website-infrastructure](website_portfolio/website-infrastructure))
 
 * **Infrastructure as Code (IaC):** The entire AWS infrastructure is defined using the **AWS Cloud Development Kit (CDK)** in TypeScript. This allows for version-controlled, repeatable, and automated provisioning of cloud resources.
 
@@ -86,5 +87,5 @@ This command will provision the AWS Amplify application and configure the CI/CD 
 ```bash
 npm run dev
 ```
-Open [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
