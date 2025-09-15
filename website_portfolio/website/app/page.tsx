@@ -51,14 +51,14 @@ export default function Portfolio() {
   ]
 
   const blogPosts = [
-    /*{
-      title: "Building Resilient Multi-Cloud Architectures",
-      description: "Best practices for designing fault-tolerant systems across AWS, Azure, and GCP.",
-      date: "2024-01-15",
+    {
+      title: "Building a Serverless Portfolio with Next.js, AWS Amplify, and CDK",
+      description: "Creating a portfolio website using a powerful combination of Next.js for the frontend, AWS Amplify for hosting and deployment, and the AWS Cloud Development Kit (CDK) for defining the infrastructure as code.",
+      date: "September 15th,2025",
       categories: ["AWS", "Azure", "Google Cloud"],
-      readTime: "8 min read",
-      link: "https://medium.com/@nilaj.majumder0814/got-my-first-cloud-certification-3939faad9a10"
-    },*/
+      readTime: "5 min read",
+      link: "https://medium.com/@nilaj.majumder0814/building-a-serverless-portfolio-with-next-js-aws-amplify-and-cdk-29b60bb8ccf4"
+    },
     {
       title: "Documenting TechHealth's AWS Migration",
       description: "Deep dive into how we migrated a healthcare web app built using AWS console to AWS CDK.",
