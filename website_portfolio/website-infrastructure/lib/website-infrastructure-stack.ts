@@ -15,7 +15,7 @@ export class WebsiteInfrastructureStack extends cdk.Stack {
       sourceCodeProvider: new amplify.GitHubSourceCodeProvider({
         owner: 'Nilaj0914',
         repository: 'Amplify-Portfolio-website',
-        oauthToken: cdk.SecretValue.unsafePlainText('github-token')
+        oauthToken: cdk.SecretValue.unsafePlainText('dummy-token')
       }),
 
       // Build Specifications
