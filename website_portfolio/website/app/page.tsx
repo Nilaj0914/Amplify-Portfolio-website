@@ -20,7 +20,7 @@ export default function Portfolio() {
       title: "Serverless Contact Form handler",
       description:
         "A serverless contact form handler, built with AWS Lambda and API Gateway, deployed using Terraform",
-      technologies: ["AWS", "AWS Cloudformation", "Security"],
+      technologies: ["AWS", "AWS Lambda", "Terraform"],
       categories: ["AWS", "AWS Lambda", "Terraform"],
       link: "https://github.com/Nilaj0914/TravelEase-Contact-Form",
     },
