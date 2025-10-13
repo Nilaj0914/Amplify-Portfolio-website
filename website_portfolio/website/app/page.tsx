@@ -17,6 +17,14 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: "Serverless Contact Form handler",
+      description:
+        "A serverless contact form handler, built with AWS Lambda and API Gateway, deployed using Terraform",
+      technologies: ["AWS", "AWS Cloudformation", "Security"],
+      categories: ["AWS", "AWS Lambda", "Terraform"],
+      link: "https://github.com/Nilaj0914/TravelEase-Contact-Form",
+    },
+    {
       title: "Amplify Portfolio website",
       description:
         "Next.js portfolio website deployed with AWS Amplify, with automatic deployments from GitHub using CICD best practices.",
@@ -32,14 +40,7 @@ export default function Portfolio() {
       categories: ["AWS", "AWS CDK", "EC2", "RDS", "Security"],
       link: "https://github.com/Nilaj0914/TechHealth-AWS-Migration",
     },
-    {
-      title: "StartupCo AWS Security Audit",
-      description:
-        "A case study project invoving a comprehensive security audit of a Startup's AWS IAM permission policies and roles to identify and remediate potential vulnerabilities.",
-      technologies: ["AWS", "AWS Cloudformation", "Security"],
-      categories: ["AWS", "AWS Cloudformation", "Security"],
-      link: "https://github.com/Nilaj0914/StartupCO-IAM-Security-Audit",
-    },
+    
     {
       title: "Pull Request CI/CD Pipeline",
       description:
@@ -51,6 +52,14 @@ export default function Portfolio() {
   ]
 
   const blogPosts = [
+    {
+      title: "Building a Scalable Serverless Contact Form Handler with AWS and Terraform",
+      description: "Learn how we created a serverless contact form handler using AWS Lambda and API Gateway, deployed with Terraform",
+      date: "October 10,2025",
+      categories: ["AWS", "AWS Lambda", "Terraform"],
+      readTime: "5 min read",
+      link: "https://medium.com/@nilaj.majumder0814/building-a-scalable-serverless-contact-form-handler-with-aws-and-terraform-a-deep-dive-fb16a14a626f"
+    },
     {
       title: "Building a Serverless Portfolio with Next.js, AWS Amplify, and CDK",
       description: "Creating a portfolio website using a powerful combination of Next.js for the frontend, AWS Amplify for hosting and deployment, and the AWS Cloud Development Kit (CDK) for defining the infrastructure as code.",
@@ -67,14 +76,7 @@ export default function Portfolio() {
       readTime: "5 min read",
       link: "https://medium.com/@nilaj.majumder0814/techhealth-migration-modernizing-a-healthcare-web-app-on-aws-with-the-cdk-15ef12c907d2"
     },
-    {
-      title: "Documenting StartupCo's AWS security audit",
-      description: "Learn how we identified and remediated critical IAM security issues in a startup's AWS environment.",
-      date: "August 27,2025",
-      categories: ["AWS", "AWS Cloudformation", "Security"],
-      readTime: "5 min read",
-      link: "https://medium.com/@nilaj.majumder0814/from-chaos-to-control-fixing-a-startups-aws-security-debt-5fd0dceb67a6"
-    },
+    
     {
       title: "AWS Certified Cloud Practitioner: My first cloud certification",
       description: "Announcing the completion of my first cloud certification.",
@@ -92,7 +94,7 @@ export default function Portfolio() {
     { name: "GitHub Actions", icon: Cloud },
     { name: "AWS Amplify", icon: Server },
     { name: "AWS Lambda", icon: Server },
-    //{ name: "Terraform", icon: Database },
+    { name: "Terraform", icon: Database },
     { name: "EC2", icon: Server },
     { name: "RDS", icon: Database },
     { name: "Security", icon: Shield },
