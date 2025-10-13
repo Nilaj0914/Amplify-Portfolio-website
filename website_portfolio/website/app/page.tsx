@@ -64,7 +64,7 @@ export default function Portfolio() {
       title: "Building a Serverless Portfolio with Next.js, AWS Amplify, and CDK",
       description: "Creating a portfolio website using a powerful combination of Next.js for the frontend, AWS Amplify for hosting and deployment, and the AWS Cloud Development Kit (CDK) for defining the infrastructure as code.",
       date: "9/15/25",
-      categories: ["AWS", "Azure", "Google Cloud"],
+      categories: ["AWS", "AWS CDK", "AWS Amplify"],
       readTime: "5 min read",
       link: "https://medium.com/@nilaj.majumder0814/building-a-serverless-portfolio-with-next-js-aws-amplify-and-cdk-29b60bb8ccf4"
     },
