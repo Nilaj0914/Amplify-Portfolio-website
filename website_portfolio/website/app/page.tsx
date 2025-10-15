@@ -134,7 +134,7 @@ export default function Portfolio() {
                 Hi, I'm Nilaj Majumder
               </h1>
               <p className="text-xl text-muted-foreground mb-6 text-pretty max-w-2xl">
-                A certified AWS Cloud Engineer, I am capable of implementing cloud solutions that are highly available, durable
+                As a certified AWS Cloud Engineer, I am capable of implementing cloud solutions that are highly available, durable
 and fault tolerant leveraging a variety of AWS Services while following industry best practices. I can tackle technical challenges efficiently using solid foundation in cloud native technologies and architectural patterns. I excel in
 communication, problem-solving and collaboration.
               </p>
