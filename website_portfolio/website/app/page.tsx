@@ -96,7 +96,7 @@ export default function Portfolio() {
     { name: "AWS Lambda", icon: Server },
     { name: "Terraform", icon: Database },
     { name: "EC2", icon: Server },
-    { name: "RDS", icon: Database },
+    //{ name: "RDS", icon: Database },
     { name: "Security", icon: Shield },
   ]
 
